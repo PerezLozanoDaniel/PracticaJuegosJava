@@ -1,10 +1,11 @@
 public abstract class Juego {
     private int vidasRestantes;
-    private int vidasIniciales = 5;
+    private int vidasIniciales;
     private int record = 0;
 
-    public Juego(int vidasIniciales) {
+    public Juego(int vidas) {
         this.vidasRestantes = vidasIniciales;
+        this.vidasIniciales=vidas;
     }
     public int MuestraVIdasRestantes() {
         System.out.println("Vidas restantes: " + this.vidasRestantes);
