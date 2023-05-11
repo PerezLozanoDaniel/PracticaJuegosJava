@@ -6,8 +6,9 @@ public abstract class Juego {
     public Juego(int vidasIniciales) {
         this.vidasRestantes = vidasIniciales;
     }
-    public void MuestraVIdasRestantes() {
-        System.out.println("\nVidas restantes: " + this.vidasRestantes);
+    public int MuestraVIdasRestantes() {
+        System.out.println("Vidas restantes: " + this.vidasRestantes);
+        return this.vidasRestantes;
     }
     public boolean QuitaVida() {
         boolean quedanVidas=true;
